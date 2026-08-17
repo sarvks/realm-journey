@@ -3,8 +3,9 @@ import { AnimatePresence, motion } from "motion/react";
 import { traditionsData } from "@/lib/cosmology";
 
 export function Traditions() {
-  const [tab, setTab] = useState(traditionsData[0].id);
-  const current = traditionsData.find((t) => t.id === tab)!;
+  const [tab, setTab] = useState(traditionsData[0]!.id);
+  const current = traditionsData.find((t) => t.id === tab) ?? traditionsData[0]!;
+
 
   return (
     <div>
