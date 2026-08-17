@@ -115,7 +115,7 @@ function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.8, delay: 1.4 }}
+          transition={{ duration: 1.8, delay: 1.0 }}
           className="mt-5 text-xl text-muted-foreground sm:text-2xl"
         >
           A Journey Through Buddhist Cosmology
@@ -123,7 +123,7 @@ function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.8, delay: 2 }}
+          transition={{ duration: 1.8, delay: 1.5 }}
           className="mt-8 max-w-2xl text-base text-muted-foreground"
         >
           Explore the realms of existence, consciousness, suffering, awakening, and liberation described across
@@ -133,7 +133,7 @@ function Hero() {
           href="#samsara"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.6, delay: 2.6 }}
+          transition={{ duration: 1.6, delay: 2.0 }}
           className="mt-12 rounded-full border border-primary/60 px-7 py-3 text-sm tracking-[0.22em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
         >
           Begin the Journey ↓
