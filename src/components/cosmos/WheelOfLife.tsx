@@ -7,7 +7,8 @@ const order = ["deva", "asura", "human", "animal", "preta", "naraka"] as const;
 
 function polar(cx: number, cy: number, r: number, deg: number) {
   const a = ((deg - 90) * Math.PI) / 180;
-  return [cx + r * Math.cos(a), cy + r * Math.sin(a)] as const;
+  const rd = (v: number) => Math.round(v * 1000) / 1000;
+  return [rd(cx + r * Math.cos(a)), rd(cy + r * Math.sin(a))] as const;
 }
 
 function segment(cx: number, cy: number, r0: number, r1: number, a0: number, a1: number) {
